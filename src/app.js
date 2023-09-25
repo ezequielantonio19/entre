@@ -88,7 +88,9 @@ class ProductManager {
     }
 }
 
-const Product1 = {
+export const manager = new ProductManager("ProductsFile.json");
+
+/*const Product1 = {
     title: 'Pote 100gr',
     description: 'Pote de PAD con capacidad de 100gr',
     price: 25000,
@@ -132,4 +134,4 @@ async function test() {
     await product.addProduct(Product4);
 }
 
-test();
+test();*/
