@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Pote 100gr",
+        "description": "Pote de PAD con capacidad de 100gr",
+        "price": 25000,
+        "thumbnail": "messi",
+        "code": "p001",
+        "stock": 13000
+    },
+    {
+        "id": 2,
+        "title": "Pote 1 kg",
+        "description": "Pote de 1kg de PAD con tapa diámetro 96",
+        "price": 15000,
+        "thumbnail": "suarez",
+        "code": "p013",
+        "stock": 9000
+    },
+    {
+        "id": 3,
+        "title": "Pico doble 1lt",
+        "description": "Bidón con dosificador, con doble pico",
+        "price": 45000,
+        "thumbnail": "ella",
+        "code": "bl08",
+        "stock": 10000
+    }
+]
