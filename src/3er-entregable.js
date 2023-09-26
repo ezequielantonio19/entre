@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/productos", async (req, res) => {
   try {
-    const products = await manager.getProducts(req.query);
+    const products = await manager.getProduct(req.query);
     res.status(200).json({ mensaje: "Producto encontrado", products });
   } catch (error) {
     res.status(500).json({ mensaje: error.message });
