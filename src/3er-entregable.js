@@ -6,8 +6,8 @@ app.use(express.json());
 
 app.get("/productos", async (req, res) => {
   try {
-    const productos = await manager.getProductos(req.query);
-    res.status(200).json({ mensaje: "Producto encontrado", productos });
+    const products = await manager.getProducts(req.query);
+    res.status(200).json({ mensaje: "Producto encontrado", products });
   } catch (error) {
     res.status(500).json({ mensaje: error.message });
   }
@@ -17,13 +17,13 @@ app.get("/productos/:id", async (req, res) => {
   console.log(req.params);
   const { id } = req.params;
   try {
-    const producto = await manager.getProductoPorId(+id);
-    if (!producto) {
+    const product = await manager.getProductsById(+id);
+    if (!product) {
       return res
         .status(404)
         .json({ mensaje: "No existe el producto" });
     }
-    res.status(200).json({ mensaje: "Producto existente", producto });
+    res.status(200).json({ mensaje: "Producto existente", product });
   } catch (error) {
     res.status(500).json({ mensaje: error.message });
   }
